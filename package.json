@@ -1,5 +1,5 @@
 {
-  "name": "uptimerobot-api",
+  "name": "uptimerobot-apiv2",
   "version": "0.0.1",
   "description": "UptimeRobot API wrapper",
   "main": "lib/index.js",
