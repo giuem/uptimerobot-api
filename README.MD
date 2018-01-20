@@ -6,8 +6,11 @@
 [![Codecov](https://img.shields.io/codecov/c/github/giuem/uptimerobot-api.svg?style=flat-square)](https://codecov.io/gh/giuem/uptimerobot-api)
 [![license](https://img.shields.io/github/license/giuem/uptimerobot-api.svg?style=flat-square)](https://github.com/giuem/uptimerobot-api/blob/master/LICENSE)
 
-
 ## Usage
+
+```bash
+$ yarn add uptimerobot-apiv2
+```
 
 ``` javascript
 import UptimRobot from 'uptimerobot-apiv2';
