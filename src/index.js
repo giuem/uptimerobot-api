@@ -1,3 +1,3 @@
-import UptimeRobot from "../src/uptimerobot";
+import UptimeRobot from "./uptimerobot";
 
 export default UptimeRobot;

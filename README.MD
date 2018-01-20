@@ -10,7 +10,7 @@
 ## Usage
 
 ``` javascript
-import UptimRobot from 'uptimerobot-api';
+import UptimRobot from 'uptimerobot-apiv2';
 
 const uptimerobot = new UptimRobot("Your API key");
 
