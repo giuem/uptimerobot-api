@@ -7,13 +7,13 @@
   "author": "giuem <giuemcom@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "precommit": "npm test && npm run build",
+    "precommit": "npm test",
     "prepublish": "npm test && npm run build",
     "clean": "rimraf lib coverage .nyc_output",
     "build": "cross-env BABEL_ENV=production babel src -d lib",
     "test": "nyc ava",
     "report": "nyc report --reporter=html",
-    "coverage": ""
+    "coverage": "nyc report --reporter=lcov > coverage.lcov && codecov"
   },
   "dependencies": {
     "axios": "^0.17.1"
