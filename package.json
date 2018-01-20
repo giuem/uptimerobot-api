@@ -1,6 +1,6 @@
 {
   "name": "uptimerobot-api",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "UptimeRobot API wrapper",
   "main": "lib/index.js",
   "repository": "https://github.com/giuem/uptimerobot-api.git",
