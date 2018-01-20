@@ -1,0 +1,62 @@
+{
+  "name": "uptimerobot-api",
+  "version": "0.0.1",
+  "description": "UptimeRobot API wrapper",
+  "main": "lib/index.js",
+  "repository": "https://github.com/giuem/uptimerobot-api.git",
+  "author": "giuem <giuemcom@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "precommit": "npm test && npm run build",
+    "prepublish": "npm test && npm run build",
+    "clean": "rimraf lib coverage .nyc_output",
+    "build": "cross-env BABEL_ENV=production babel src -d lib",
+    "test": "nyc ava",
+    "report": "nyc report --reporter=html",
+    "coverage": ""
+  },
+  "dependencies": {
+    "axios": "^0.17.1"
+  },
+  "devDependencies": {
+    "ava": "^0.24.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "codecov": "^3.0.0",
+    "cross-env": "^5.1.3",
+    "eslint": "^4.15.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-prettier": "^2.5.0",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "husky": "^0.14.3",
+    "nyc": "^11.4.1",
+    "prettier": "1.10.2",
+    "rimraf": "^2.6.2"
+  },
+  "ava": {
+    "files": [
+      "test/*.js"
+    ],
+    "source": [
+      "src/**/*.js"
+    ],
+    "concurrency": 5,
+    "failFast": true,
+    "failWithoutAssertions": false,
+    "tap": false,
+    "powerAssert": true,
+    "require": [
+      "babel-register"
+    ],
+    "babel": "inherit"
+  },
+  "keywords": [
+    "Uptime Robot",
+    "es6"
+  ]
+}
