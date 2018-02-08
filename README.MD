@@ -1,5 +1,7 @@
 # Uptime Robot API
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/giuem/uptimerobot-api.svg)](https://greenkeeper.io/)
+
 > UptimeRobot API wrapper
 
 [![Travis](https://img.shields.io/travis/giuem/uptimerobot-api.svg?style=flat-square)](https://travis-ci.org/giuem/uptimerobot-api)
