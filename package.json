@@ -16,7 +16,7 @@
     "coverage": "nyc report --reporter=lcov > coverage.lcov && codecov"
   },
   "dependencies": {
-    "axios": "^0.17.1"
+    "axios": "^0.18.1"
   },
   "devDependencies": {
     "ava": "^0.25.0",
